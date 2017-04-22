@@ -9,6 +9,10 @@
         <ion-list>
             <ion-item ng-repeat="task in tasks">
                 {{task.title}}
+                <ion-option-button class="button-calm" ng-click="complete(task)">complete</ion-option-button>
+            </ion-item>
+            <ion-item ng-repeat="complete_task in complete_tasks">
+                <s>{{complete_task.title}}</s>
             </ion-item>
         </ion-list>
     </ion-content>
